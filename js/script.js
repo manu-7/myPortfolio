@@ -322,3 +322,14 @@ themeBtn.addEventListener("click", () => {
 
 
 
+document.addEventListener("touchstart", (e) => {
+    let ripple = document.createElement("span");
+    ripple.classList.add("ripple");
+    document.body.appendChild(ripple);
+  
+    ripple.style.left = `${e.touches[0].clientX}px`;
+    ripple.style.top = `${e.touches[0].clientY}px`;
+  
+    setTimeout(() => ripple.remove(), 500);
+  });
+  
