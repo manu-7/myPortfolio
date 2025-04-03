@@ -2026,11 +2026,22 @@
       .resume-items .items-left .info {
         right: 11px;
       }
+      .avatar-info .text-content {
+         position: relative;
+         top: 6px;
+       }
     }
+  
     @media screen and (max-width: 480px) {
       .resume-items .items .info {
         width: 151px;
         column-gap: 15px;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .avatar-info .text-content {
+        position: relative !important;
+        top: -8px !important;
       }
     }
     
@@ -2045,9 +2056,5 @@
          left: -33px;
        }
         
-         .about-img {
-           width: 504px;
-         
-       }
 
     }
