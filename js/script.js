@@ -102,25 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // testimonials swiper
 
-document.addEventListener("DOMContentLoaded", function () {
-    var swiper = new Swiper(".ms-client-swiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        // autoplay: {
-        //     // delay: 4000, // Auto-slide every 4 seconds
-        //     disableOnInteraction: false,
-        // },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-});
+
 
 // email js
 
@@ -336,4 +318,50 @@ themeBtn.addEventListener("click", () => {
 
     // Update theme colors dynamically
     updateThemeColors(isLightTheme);
+});
+
+
+//scroll animation
+
+ScrollReveal({
+    reset: true,
+    distance: '60px',
+    duration: 2500,
+    delay: 400
+});
+
+// Target elements and specify options to create reveal animations.
+ScrollReveal().reveal('.avatar-img', { delay: 100, origin: 'top' });
+ScrollReveal().reveal('.avatar-info, .section-title', { delay: 300, origin: 'top' });
+ScrollReveal().reveal('.home-social, .home-scroll-btn', { delay: 600, origin: 'bottom' });
+ScrollReveal().reveal('.about-img', { delay: 700, origin: 'top' });
+ScrollReveal().reveal('.about-info', { delay: 300, origin: 'bottom' });
+ScrollReveal().reveal('.pro-card, .about-buttons .sue-main-btn, .resume-tabs-tab-btn', { delay: 500, origin: 'right', interval: 200 });
+
+window.onload = function () {
+    ScrollReveal().reveal('.avatar-img', { delay: 100, origin: 'top' });
+};
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".avatar-img", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".avatar-img",
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+    }
+});
+
+gsap.from(".about-info", {
+    opacity: 0,
+    x: -50,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".about-info",
+        start: "top 90%",
+        toggleActions: "play none none reverse"
+    }
 });

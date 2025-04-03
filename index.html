@@ -5,15 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>portfolio</title>
   
-  <!--========== Swiper CSS ==========-->
-  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
 
   <!--========== Main style sheet ==========-->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
   <!--========== Remixicon ==========-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
   <!--========== ScrollReveal JS ==========-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+
   
 </head>
 <body>
@@ -34,14 +39,15 @@
                     <a href="#"><span>Manu</span></a>
                 </div>
                 <div class="header-btns">
-                   <div class="ms-main-btn border-btn lets-talk-btn">
-                    <a href="#contact">Let's talk</a>
-                   </div> 
-                   <a href="#contact" class="lets-talk-icon"><i class="ri-chat-1-fill"></i></a>
-                   <div class="theme-btn">
-                    <i class="ri-sun-fill sun-icon"></i>
-                    <i class="ri-moon-fill moon-icon"></i>
-                   </div>
+                    <div class="ms-main-btn border-btn lets-talk-btn">
+                        <a href="#contact">
+                            <span class="btn-text">Let's talk</span>
+                            <i class="ri-chat-1-fill chat-icon"></i> <!-- Chat icon -->
+                        </a>
+                    </div>
+                     
+                   <!-- <a href="#contact" class="lets-talk-icon"><i class="ri-chat-1-fill"></i></a> -->
+                   
                 </div>
             </div>
         </div>
@@ -74,17 +80,14 @@
                 <span>Follow On</span>
                 <div class="social-line"></div>
                 <ul class="social-icons">
-                    <li><a href="#"><i class="ri-behance-line"></i></a></li>
-                    <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
+                    <li><a href="https://www.behance.net/manusingh28"><i class="ri-behance-line"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/manusingh02/"><i class="ri-linkedin-fill"></i></a></li>
                     <li><a href="#"><i class="ri-instagram-line"></i></a></li>
                 </ul>
             </div>
             
         </div>
         <div class="avatar-container">
-            <div class="ms-main-btn fill-btn hire-btn-01">
-                <a href="#">Hire Me <i class="ri-user-follow-line"></i></a>
-            </div>
             <div class="avatar-img">
                 <img src="./images/undefined - Imgur.png" alt="">
             </div>
@@ -93,9 +96,9 @@
                     <h4 class="hello-text">Hello, I'm</h4>
                     <h1 class="my-name">Manu Singh</h1>
                     <p class="what-i-do">A Web Designer & Developer</p>
-                </div>
-                <div class="ms-main-btn fill-btn hire-btn-02">
-                    <a href="#">Hire Me <i class="ri-user-follow-line"></i></a>
+                    <div class="ms-main-btn fill-btn hire-btn-02">
+                        <a href="#">Explore<i class="ri-arrow-right-line"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -121,11 +124,12 @@
                 </div>
                 <div class="about-details">
                     <div class="about-info">
-                        <h4 class="iam">I'm a Web Designer & Developer</h4>
+                        <h4 class="iam">I'm a Web Developer & UI/UX Designer</h4>
                         <p class="about-discription">
-                            I specialize in creating visually appealing and user-friendly websites. With expertise in HTML, CSS, JavaScript, and React, I design and develop responsive web applications that enhance user experience. Passionate about UI/UX design, I focus on delivering modern and interactive digital solutions.
+                            I specialize in building dynamic and user-friendly websites using Python, Django, HTML, CSS, and JavaScript. With a strong foundation in web development, I create responsive and efficient applications. Additionally, my UI/UX expertise allows me to design intuitive interfaces that enhance user experience, ensuring modern and visually appealing digital solutions.
                         </p> 
                     </div>
+                    
                     <div class="pro-list">
                         <div class="pro-card">
                             <span>02</span>
@@ -136,16 +140,17 @@
                             <p>Complete Projects</p>
                         </div>
                         <div class="pro-card">
-                            <span>03</span>
-                            <p>Certifications</p>
-                        </div>    
+                            <span>01</span>
+                            <p>Internship</p>
+                        </div>
+                           
                     </div>
                     <div class="about-buttons">
                         <div class="ms-main-btn fill-btn">
-                            <a href="#">Hire Me <i class="ri-user-follow-line"></i></a>
+                            <a href="#">Hire Me</a>
                         </div>
-                        <div class="ms-main-btn border-btn">
-                            <a href="./images/ManuSingh_resume (2).pdf (1).pdf"download>Download</a>
+                        <div class="ms-main-btn download-btn">
+                            <a href="./images/Resume.pdf" download>Download</a>
                         </div>
                     </div>
                 </div>
@@ -245,86 +250,84 @@
                 <!-- Skills Section -->
                 <div class="resume-tab-content skills active">
                     <div class="skills-container">
+                
                         <!-- Front-End Developer Skills -->
                         <div class="skills-box">
-                            <h3><i class="ri-code-fill"></i> Front-End Developer</h3>
+                            <h3><i class="ri-code-fill"></i> Front-End Development</h3>
                             <ul>
                                 <li>HTML <span>Advanced</span></li>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 90%;"></div>
-                                </div>
-
-                                <li>CSS <span>Intermediate</span></li>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 70%;"></div>
-                                </div>
-
+                                <div class="skill-progress"><div class="progress-bar" style="width: 95%;"></div></div>
+                
+                                <li>CSS <span>Advanced</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 85%;"></div></div>
+                
                                 <li>JavaScript <span>Intermediate</span></li>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 70%;"></div>
-                                </div>
-
-                                <li>React <span>Intermediate</span></li>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 70%;"></div>
-                                </div>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 75%;"></div></div>
+                
+                                <li>React.js <span>Beginner</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 40%;"></div></div>
+                
+                                <li>Bootstrap <span>Advanced</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 90%;"></div></div>
+                
+                                <li>Tailwind CSS <span>Intermediate</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 75%;"></div></div>
                             </ul>
                         </div>
-
-                        <!-- UI/UX Designer Skills -->
+                
+                        <!-- UI/UX Design Skills -->
                         <div class="skills-box">
-                            <h3><i class="ri-pencil-ruler-line"></i> UI/UX Designer</h3>
+                            <h3><i class="ri-pencil-ruler-line"></i> UI/UX Design</h3>
                             <ul>
                                 <li>Figma <span>Advanced</span></li>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 85%;"></div>
-                                </div>
-
+                                <div class="skill-progress"><div class="progress-bar" style="width: 90%;"></div></div>
+                
                                 <li>Wireframing <span>Advanced</span></li>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 80%;"></div>
-                                </div>
-
+                                <div class="skill-progress"><div class="progress-bar" style="width: 85%;"></div></div>
+                
                                 <li>Prototyping <span>Intermediate</span></li>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 70%;"></div>
-                                </div>
-
+                                <div class="skill-progress"><div class="progress-bar" style="width: 75%;"></div></div>
+                
                                 <li>UI Design <span>Advanced</span></li>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 90%;"></div>
-                                </div>
-
+                                <div class="skill-progress"><div class="progress-bar" style="width: 90%;"></div></div>
+                
                                 <li>UX Research <span>Intermediate</span></li>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 75%;"></div>
-                                </div>
-
+                                <div class="skill-progress"><div class="progress-bar" style="width: 75%;"></div></div>
+                
                                 <li>User Testing <span>Intermediate</span></li>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 70%;"></div>
-                                </div>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 75%;"></div></div>
                             </ul>
                         </div>
-                        <!-- Programming Skills -->
+                
+                        <!-- Programming & Backend Skills -->
                         <div class="skills-box">
-                            <h3><i class="ri-terminal-box-line"></i> Programming Skills</h3>
+                            <h3><i class="ri-terminal-box-line"></i> Programming & Backend</h3>
                             <ul>
+                                <li>Python <span>Intermediate</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 75%;"></div></div>
+                
+                                <li>Django <span>Beginner</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 60%;"></div></div>
+                
                                 <li>C++ <span>Intermediate</span></li>
                                 <div class="skill-progress"><div class="progress-bar" style="width: 75%;"></div></div>
-                    
+                
                                 <li>Data Structures & Algorithms <span>Intermediate</span></li>
-                                <div class="skill-progress"><div class="progress-bar" style="width: 70%;"></div></div>
-                    
+                                <div class="skill-progress"><div class="progress-bar" style="width: 75%;"></div></div>
+                
                                 <li>Problem Solving <span>Intermediate</span></li>
-                                <div class="skill-progress"><div class="progress-bar" style="width: 70%;"></div></div>
-
-                                <li>LeetCode <span>Intermediate</span></li>
-                                <div class="skill-progress"><div class="progress-bar" style="width: 70%;"></div></div>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 75%;"></div></div>
+                
+                               
                             </ul>
                         </div>
+                
+                        
+                        
+                
                     </div>
-                </div> 
+                </div>
+                 
             </div> 
         </div> 
     </div> 
@@ -335,7 +338,7 @@
 
   <!--========== Services ==========-->
   <div class="ms-section nav-menu-section" id="service">
-     <div class="ms-container ms-sub-container">
+    <div class="ms-container ms-sub-container">
         <div class="ms-wrapper">
             <div class="section-title">
                 <h3>Services</h3>
@@ -344,12 +347,12 @@
             <div class="section-content">
                 <div class="service-container">
 
+                    <!-- Frontend Development Card -->
                     <div class="card-with-modal">
                         <div class="service-card">
                             <div class="service-info">
-                                <i class="ri-pencil-ruler-2-fill service-icon"></i>
-
-                                <h4>Web Design</h4>
+                                <i class="ri-code-box-line service-icon"></i>
+                                <h4>Frontend Development</h4>
                                 <a class="service-see-more">See more <i class="ri-arrow-right-up-fill"></i></a>
                             </div>
                         </div>
@@ -357,58 +360,62 @@
                             <div class="service-modal">
                                 <a class="modal-close-btn"><i class="ri-close-line"></i></a>
                                 <div class="modal-content">
-                                    <div class="modal-title">
-                                        <h3>Web Design</h3>
-                                        <p>I create visually appealing and highly functional websites that offer an exceptional user experience. Our designs focus on seamless navigation, modern aesthetics, and responsiveness across all devices.</p>
-                                    </div>
+                                    <h3>Frontend Development</h3>
+                                    <p>I create visually appealing and responsive web interfaces using modern technologies.</p>
+                                    
+                                    <h4>Technologies I Use</h4>
+                                    <ul class="my-services">
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>HTML, CSS , JavaScript</p></li>
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>React.js</p></li>
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>Tailwind CSS, Bootstrap</p></li>
+                                    </ul>
+                    
+                                    <h4>My Experience</h4>
+                                    <ul class="my-services">
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>2+ years of experience in frontend development</p></li>
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>Developed interactive UIs</p></li>
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>Optimized website performance for better user experience</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- UI/UX Design Card -->
+                    <div class="card-with-modal">
+                        <div class="service-card">
+                            <div class="service-info">
+                                <i class="ri-palette-fill service-icon"></i>
+                                <h4>UI/UX Designing</h4>
+                                <a class="service-see-more">See more <i class="ri-arrow-right-up-fill"></i></a>
+                            </div>
+                        </div>
+                        <div class="service-modal-backdrop">
+                            <div class="service-modal">
+                                <a class="modal-close-btn"><i class="ri-close-line"></i></a>
+                                <div class="modal-content">
+                                    <h3>UI/UX Design</h3>
+                                    <p>I specialize in designing user-friendly and visually appealing interfaces for web and mobile applications. My focus is on enhancing user experience through research, wireframing, and modern design principles.</p>
                                     <h4>What I Provide</h4>
                                     <ul class="my-services">
-                                        <li><i class="ri-checkbox-circle-fill"></i><p>Design & Build a custom Website</p></li>
-                                        <li><i class="ri-checkbox-circle-fill"></i><p>Responsive Website Design</p></li>
-                                        <li><i class="ri-checkbox-circle-fill"></i><p>Website Hosting</p></li>
-                                        <li><i class="ri-checkbox-circle-fill"></i><p>Design & Build a custom Website</p></li>
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>Wireframing & Prototyping (Figma)</p></li>
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>Responsive & Modern Web Design</p></li>
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>Design System & Style Guide Creation</p></li>
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>User Interface (UI) & User Experience (UX) Design</p></li>
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>Improving Website Usability & Navigation</p></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Backend Development with Django Card -->
                     <div class="card-with-modal">
                         <div class="service-card">
                             <div class="service-info">
-                                <i class="ri-image-edit-line service-icon"></i>
-                                <h4>Graphic Design</h4>
-                                <a class="service-see-more">See more <i class="ri-arrow-right-up-fill"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="service-modal-backdrop">
-                            <div class="service-modal">
-                                <a class="modal-close-btn"><i class="ri-close-line"></i></a>
-                                <div class="modal-content">
-                                    <div class="modal-title">
-                                        <h3>Graphic Design</h3>
-                                        <p>I specialize in creating visually stunning graphic designs that deliver exceptional user experiences. From branding to marketing materials, my designs focus on creativity, clarity, and communication, tailored to your business needs.</p>
-                                    </div>
-                                    <h4>What I Provide</h4>
-                                    <ul class="my-services">
-                                        <li><i class="ri-checkbox-circle-fill"></i><p>Custom Graphic Design</p></li>
-                                        <li><i class="ri-checkbox-circle-fill"></i><p>Brand Identity & Logo Design</p></li>
-                                        <li><i class="ri-checkbox-circle-fill"></i><p>Social Media Graphics</p></li>
-                                        <li><i class="ri-checkbox-circle-fill"></i><p>Print Design (Flyers, Brochures, etc.)</p></li>
-                                        <li><i class="ri-checkbox-circle-fill"></i><p>UI/UX Design for Web and Mobile</p></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                    <div class="card-with-modal">
-                        <div class="service-card">
-                            <div class="service-info">
-                                <i class="ri-align-item-left-fill service-icon"></i>
-                                <h4>UI/UX Design</h4>
+                                <i class="ri-database-2-line service-icon"></i>
+                                <h4>Backend Development with Django</h4>
                                 <a class="service-see-more">See more <i class="ri-arrow-right-up-fill"></i></a>
                             </div>
                         </div>
@@ -416,30 +423,26 @@
                             <div class="service-modal">
                                 <a class="modal-close-btn"><i class="ri-close-line"></i></a>
                                 <div class="modal-content">
-                                    <div class="modal-title">
-                                        <h3>UI/UX Design</h3>
-                                        <p>I specialize in designing seamless and intuitive user interfaces that enhance user experience. I focus on creating responsive, user-friendly designs for both web and mobile platforms, ensuring optimal usability and functionality for your target audience.</p>
-                                    </div>
+                                    <h3>Backend Development with Django</h3>
+                                    <p>I build dynamic and scalable web applications using Django and Python.</p>
                                     <h4>What I Provide</h4>
                                     <ul class="my-services">
-                                        <li><i class="ri-checkbox-circle-fill"></i><p>User Interface (UI) Design</p></li>
-                                        <li><i class="ri-checkbox-circle-fill"></i><p>User Experience (UX) Research and Strategy</p></li>
-                                        <li><i class="ri-checkbox-circle-fill"></i><p>Wireframing and Prototyping</p></li>
-                                        <li><i class="ri-checkbox-circle-fill"></i><p>Usability Testing and Analysis</p></li>
-                                        <li><i class="ri-checkbox-circle-fill"></i><p>Responsive Web and Mobile Design</p></li>
-                                        <li><i class="ri-checkbox-circle-fill"></i><p>Interaction and Motion Design</p></li>
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>Custom Web Applications</p></li>
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>Database Management with Django ORM</p></li>
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>Authentication & User Management</p></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
 
                 </div>
             </div>
         </div>
-     </div>
-  </div>
+    </div>
+</div>
+
+
 
   <!--========== Portfolio ==========-->
   <section class="ms-section nav-menu-section" id="portfolio">
@@ -451,9 +454,9 @@
             </div>
             <div class="portfolio-tabs">
                 <a class="tab-btn active" data-filter="all">All</a>
-                <a class="tab-btn" data-filter="web-design">Web Design</a>
+                <a class="tab-btn" data-filter="web-design">Frontend Development</a>
                 <a class="tab-btn" data-filter="ui-design">UI/UX Design</a>
-                <a class="tab-btn" data-filter="graphic-design">Graphic Design</a>
+                <a class="tab-btn" data-filter="graphic-design">Web Apps</a>
             </div>
 
             <div class="section-content">
@@ -462,11 +465,11 @@
                     <div class="card-with-modal web-design">
                         <div class="portfolio-card">
                             <div class="card-img">
-                                <img src="./images/pic6.png" alt="">
+                                <img src="./images/portfolio.png" alt="">
                             </div>
                             <div class="card-info">
-                                <span>Web Design</span>
-                                <h4>Interactive UI</h4>
+                                <span>Frontend Development</span>
+                                <h4>Portfolio</h4>
                                 <a href="https://www.figma.com/design/ued06DUbQSclqNncCyMHWM/CMA?node-id=0-1&t=p1t1M6ZzKPu0A8rw-1"></a>
                                 <i class="ri-arrow-right-up-line card-btn"></i>
                             </div>
@@ -480,7 +483,7 @@
                                 <img src="./images/pic6.png" alt="">
                             </div>
                             <div class="card-info">
-                                <span>Web Design</span>
+                                <span>Frontend Development</span>
                                 <h4>Travel Website</h4>
                                 <i class="ri-arrow-right-up-line card-btn"></i>
                             </div>
@@ -495,7 +498,9 @@
                             <div class="card-info">
                                 <span>UI/UX Design</span>
                                 <h4>Cricket Management App</h4>
-                                <i class="ri-arrow-right-up-line card-btn"></i>
+                                <a href="https://www.figma.com/design/ued06DUbQSclqNncCyMHWM/CMA?node-id=0-1&t=JRKNfbmRFLCoG1Wm-1" target="_blank" class="card-link">
+                                    <i class="ri-arrow-right-up-line card-btn"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -508,7 +513,9 @@
                             <div class="card-info">
                                 <span>UI/UX Design</span>
                                 <h4>Home-Rent App Design</h4>
-                                <i class="ri-arrow-right-up-line card-btn"></i>
+                                <a href="https://www.figma.com/design/onrCEgUI2Ho6ReMR2ucvYs/homerent-app?node-id=0-1&t=HUoQUSGtE3ztEYDT-1" target="_blank" class="card-link">
+                                    <i class="ri-arrow-right-up-line card-btn"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -521,7 +528,9 @@
                             <div class="card-info">
                                 <span>UI/UX Design</span>
                                 <h4>Ecommerce-Website Design</h4>
-                                <i class="ri-arrow-right-up-line card-btn"></i>
+                                <a href="https://www.figma.com/design/wZ0LIaB5TuTwvtRl0Sb8EF/ecommerce?node-id=0-1&t=DdkV9Brf9feHvSoR-1" target="_blank" class="card-link">
+                                    <i class="ri-arrow-right-up-line card-btn"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -529,55 +538,39 @@
                     <div class="card-with-modal graphic-design">
                         <div class="portfolio-card">
                             <div class="card-img">
-                                <img src="./images/pic2.png" alt="">
+                                <img src="./images/ecopark.png" alt="">
                             </div>
                             <div class="card-info">
-                                <span>Graphic Design</span>
-                                <h4>Modern Aesthetics</h4>
-                                <i class="ri-arrow-right-up-line card-btn"></i>
+                                <span>Web App</span>
+                                <h4>Eco-park ticket Booking System</h4>
+                                <a href="https://github.com/manu-7/Eco-park-Ticket-booking" target="_blank" class="card-link">
+                                    <i class="ri-arrow-right-up-line card-btn"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
+                    <div class="card-with-modal graphic-design">
+                        <div class="portfolio-card">
+                            <div class="card-img">
+                                <img src="./images/crud.png" alt="Student Management System">
+                            </div>
+                            <div class="card-info">
+                                <span>Web App</span>
+                                <h4>Student Management System</h4>
+                    
+                                
+                                <a href="https://github.com/manu-7/Crud-App" target="_blank" class="card-link">
+                                    <i class="ri-arrow-right-up-line card-btn"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
 
                 </div>
             </div>
         </div>
-  <div class="testimonials">
-   <div class="section-title">
-      <h3>Awesome Clients</h3>
-      <p>Words From My Clients</p>
-   </div>
-   <div class="section-content">
-      <div class="swiper ms-client-swiper">
-         <div class="swiper-wrapper">
-            <div class="swiper-slide">
-               <div class="client-img">
-                  <img src="./images/team-slider1.png" alt="Enayatul Haque">
-               </div>
-               <div class="client-details">
-                  <h3>Enayatul Haque</h3>
-                  <span>Director, INA Webtech</span>
-                  <p>Manu Singh's expertise in UI/UX design greatly improved our app and admin dashboard. Their attention to detail and user-focused approach made both interfaces intuitive and efficient. A highly skilled and dedicated designer!</p>
-               </div>
-            </div>
-            <div class="swiper-slide">
-               <div class="client-img">
-                  <img src="./images/team-slider3.png" alt="Bajarang Yadav">
-               </div>
-               <div class="client-details">
-                  <h3>Bajarang Yadav</h3>
-                  <span>Frontend Developer, ICRA</span>
-                  <p>Manu Singh is a highly skilled UI/UX designer with a strong focus on usability and aesthetics. Their ability to create intuitive, modern, and responsive designs has greatly improved our project's user experience. Professional, creative, and detail-oriented!</p>
-               </div>
-            </div>
-         </div>
-         <div class="swiper-button-next"></div>
-         <div class="swiper-button-prev"></div>
-         <div class="swiper-button-pagination"></div>
-      </div>
-   </div>
- </div>
-</div>
+
 </section>
 
 
@@ -626,9 +619,9 @@
 
                         <h3>Social Info</h3>
                         <ul class="contact-social-links">
-                            <li><a href="https://twitter.com" target="_blank"><i class="ri-twitter-fill"></i></a></li>
+                            <li><a href="https://x.com/msmanusingh07" target="_blank"><i class="ri-twitter-fill"></i></a></li>
                             <li><a href="https://instagram.com" target="_blank"><i class="ri-instagram-fill"></i></a></li>
-                            <li><a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/manusingh02/" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
                         </ul>
                     </div>
 
@@ -682,8 +675,6 @@
   
 
 
-  <!--========== Swiper JS ==========-->
-<script src="./js/swiper-bundle.min.js"></script>
   <!--========== EmailJS ==========-->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <!--========== Main javascript ==========-->
