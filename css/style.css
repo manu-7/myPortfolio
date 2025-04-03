@@ -2010,4 +2010,27 @@
         Media Queries (max-width: 480px)
      ========================================= */
 
-   
+     @media (max-width: 480px) {
+      .lets-talk-btn .chat-icon {
+        position: relative;
+        left: 61px;
+      }
+      .hire-btn-02{
+         display: none;
+      }
+      .resume-items .items .info h5 {
+         max-width: 131px;
+       }
+    }
+    @media screen and (max-width: 480px) {
+      .resume-items .items-left .info {
+        right: 11px;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .resume-items .items .info {
+        width: 151px;
+        column-gap: 15px;
+      }
+    }
+    
