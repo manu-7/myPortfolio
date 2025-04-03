@@ -2034,3 +2034,20 @@
       }
     }
     
+    @media screen and (max-width: 780px) {
+      .avatar-info .text-content {
+         position: relative;
+         top: -88px;
+       }
+
+       .home-social {
+         position: absolute;
+         left: -33px;
+       }
+        
+         .about-img {
+           width: 504px;
+         
+       }
+
+    }
